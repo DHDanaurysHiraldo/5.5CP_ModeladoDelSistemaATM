@@ -43,8 +43,7 @@ namespace _5_5CP_ModeladoDelSistemaATM
             {
                 return false;
             }
-
-            Saldo -= monto;
+            Saldo -= monto; 
             return true;
         }
 
