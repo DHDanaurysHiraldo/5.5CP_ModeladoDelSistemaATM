@@ -13,7 +13,7 @@ namespace _5_5CP_ModeladoDelSistemaATM
         public DateTime Fecha { get; set; }
 
 
-        public string MostrarDetalles()
+        public string MostrarDetalle()
         {
             return $"{Fecha:dd/MM/yyyy HH:mm} | {Tipo,-10} | RD$ {Monto,10:N2}";
         }
