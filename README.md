@@ -101,6 +101,8 @@ En el Mini ATM V2 los **datos** de la cuenta eran variables sueltas en `Main` y 
 ├── Cuenta.cs                            # Clase Cuenta
 ├── Transaccion.cs                       # Clase Transaccion
 ├── Program.cs                           # Crea y usa los objetos
+├── docs/
+│   └── evidencias/                      # Capturas de compilación y ejecución
 └── README.md
 ```
 
@@ -216,6 +218,20 @@ Fin de la demostración.
 
 > La fecha y la hora varían según el momento de ejecución. El separador de miles y decimales puede variar según la configuración regional del equipo.
 
+### 6.4 Evidencias de ejecución
+
+**Compilación (CP-05)**
+
+![Compilación sin errores](docs/evidencias/CP-05_compilacion.png)
+
+**Ejecución: estado inicial y operaciones (CP-06, CP-07)**
+
+![Ejecución parte 1](docs/evidencias/CP-07_ejecucion_1.png)
+
+**Ejecución: transacciones y clase vs. objeto (CP-08)**
+
+![Ejecución parte 2](docs/evidencias/CP-08_ejecucion_2.png)
+
 ---
 
 ## 7. Pruebas y criterios de aceptación
@@ -226,10 +242,10 @@ Fin de la demostración.
 | CP-02 | Cada clase tiene métodos y estado o justificación de ausencia de estado. | Sección 2.2 | ✅ |
 | CP-03 | Se presentan dos ejemplos concretos de instancias. | Sección 2.2 (`cuentaJuan`, `retiroHoy`, entre otros) | ✅ |
 | CP-04 | La tabla consolidada es completa y coherente. | Sección 2.2 | ✅ |
-| CP-05 | El proyecto compila con al menos dos clases propias. | `Cuenta.cs`, `Transaccion.cs` | ✅ |
-| CP-06 | `Program.cs` crea objetos con `new`. | `Program.cs` | ✅ |
-| CP-07 | Se asignan propiedades y se invocan métodos. | `Program.cs`, secciones 1 a 5 de la salida | ✅ |
-| CP-08 | La consola evidencia los resultados esperados. | Sección 6.3 | ✅ |
+| CP-05 | El proyecto compila con al menos dos clases propias. | `Cuenta.cs`, `Transaccion.cs` · [captura](docs/evidencias/CP-05_compilacion.png) | ✅ |
+| CP-06 | `Program.cs` crea objetos con `new`. | `Program.cs` · [captura](docs/evidencias/CP-07_ejecucion_1.png) | ✅ |
+| CP-07 | Se asignan propiedades y se invocan métodos. | `Program.cs`, secciones 1 a 5 de la salida · [captura](docs/evidencias/CP-07_ejecucion_1.png) | ✅ |
+| CP-08 | La consola evidencia los resultados esperados. | Secciones 6.3 y 6.4 · [captura](docs/evidencias/CP-08_ejecucion_2.png) | ✅ |
 | CP-09 | README explica objetivo, alcance y ejecución. | Este documento | ✅ |
 | CP-10 | El enlace de GitHub permite revisar los entregables. | [Repositorio](https://github.com/DHDanaurysHiraldo/5.5CP_ModeladoDelSistemaATM) | ✅ |
 
@@ -240,5 +256,5 @@ Fin de la demostración.
 | Requerimientos | Evidencia | Pruebas |
 | :--- | :--- | :--- |
 | RF-01 a RF-06 | Sección 2 (análisis y tabla consolidada) | CP-01 a CP-04 |
-| RF-07 a RF-10 | `Cuenta.cs`, `Transaccion.cs`, `Program.cs` y salida por consola | CP-05 a CP-08 |
+| RF-07 a RF-10 | `Cuenta.cs`, `Transaccion.cs`, `Program.cs`, salida por consola y `docs/evidencias/` | CP-05 a CP-08 |
 | RF-11 a RF-12 | Este README y el repositorio GitHub | CP-09 a CP-10 |
